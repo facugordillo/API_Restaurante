@@ -6,7 +6,7 @@ function Get() {
     .then((data) => {
       console.log(data);
 
-      const tbody = document.querySelector("ul");
+      const ul = document.querySelector("ul");
 
       data.forEach((o) => {
         let _li = ` <li>${o.Nombre}</li>
@@ -16,7 +16,7 @@ function Get() {
                     <li>${o.cant_personas}</li>
                     `
 
-        URL.innerHtml += _li;
+        ul.innerHtml += _li;
       });
     });
 }
