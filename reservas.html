@@ -1,94 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Drinks & Friends - Reservas</title>
-</head>
-<body>
-
-    <!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Drinks & Friends - Reservas</title>
 </head>
 
 <body>
 
-  <!-- HEADER O MENÚ -->
-  <div class="wrap-header-hero">
-    <header class="main-header">
-      <div class="header-wrap">
-        <div class="wrap-logo-header">
-          <a class="logo-header" href="/">Drinks&Friends</a>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER O MENÚ -->
+    <div class="wrap-header-hero">
+      <header class="main-header">
+        <div class="header-wrap">
+          <div class="wrap-logo-header">
+            <a class="logo-header" href="/">Drinks&Friends</a>
+          </div>
+          <div class="wrap-nav-header">
+            <nav class="nav-header">
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+                <i class="toggle-menu">
+                  <img src="" />
+                </i>
+              </label>
+
+              <ul class="main-menu">
+                <li class="menu-item"><a href="/index.html">Inicio</a></li>
+                <li class="menu-item"><a href="/nosotros.html">Nosotros</a></li>
+                <li class="menu-item"><a href="/carta.html">Carta</a></li>
+                <li class="menu-item"><a href="/blog.html">Blog</a></li>
+                <li class="menu-item"><a href="/reservas.html">Reservar</a></li>
+                <li id="nav-main-contact" class="menu-item"><a href="/contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="wrap-nav-header">
-          <nav class="nav-header">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <i class="toggle-menu">
-                <img src="" />
-              </i>
-            </label>
 
-            <ul class="main-menu">
-              <li class="menu-item"><a href="/index.html">Inicio</a></li>
-              <li class="menu-item"><a href="/nosotros.html">Nosotros</a></li>
-              <li class="menu-item"><a href="/carta.html">Carta</a></li>
-              <li class="menu-item"><a href="/blog.html">Blog</a></li>
-              <li class="menu-item"><a href="/reservas.html">Reservar</a></li>
-              <li id="nav-main-contact" class="menu-item"><a href="/contacto.html">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+        <!-- /////////////////////////////////////////////////////////////////////////////// -->
 
-      <!-- /////////////////////////////////////////////////////////////////////////////// -->
+      </header>
 
-    </header>
-
-    <section class="banner">
+      <section class="banner">
 
         <h2 class="titulo">Reserva tu Mesa</h2>
         <div class="card-contenedor">
-            <div class="card-image"></div>
-            <div class="card-contenido">
-                <h3>Reserva</h3>
-                <form id="reservar-mesa">
-                    <div class="form-row">
-                        <input type="date" id="fecha" name="fecha">
-                        <input type="time" id="hora" name="hora" min="10:00" max="24:00" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="text" id="nombre" placeholder="Nombre Completo" name="nombre">
-                        <input type="text" name="telefono" id="telefono" placeholder="Telefono">
-                    </div>
-                    <div class="form-row">
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-primary">Córdoba (centro)</button>
-                            <button type="button" class="btn btn-outline-primary">Villa Allende</button>
-                            <button type="button" class="btn btn-outline-primary">San Rafael Mendoza</button>
-                          </div>
-                    </div>
-                    <div class="form-row">
-                        <input type="number" id="personas" placeholder="Personas por Mesa" name="personas" min="1">
-                        <input type="submit" value="RESERVAR MESA">
-                    </div>
-                </form>
-            </div>
-            <div id="administraReservas" >
-           
-                <h2 id="administra">Administrar reservas</h2>
-                <ul id="reservas" class="lista-citas"></ul>
-            </div>
-    </section>
+          <div class="card-image"></div>
+          <div class="card-contenido">
+            <h3>Reserva</h3>
+            <form id="reservar-mesa">
+              <div class="form-row">
+                <input type="date" id="fecha" name="fecha">
+                <input type="time" id="hora" name="hora" min="10:00" max="24:00" required>
+              </div>
+              <div class="form-row">
+                <input type="text" id="nombre" placeholder="Nombre Completo" name="nombre">
+                <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+              </div>
+              <div class="form-row">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn btn-outline-primary">Córdoba (centro)</button>
+                  <button type="button" class="btn btn-outline-primary">Villa Allende</button>
+                  <button type="button" class="btn btn-outline-primary">San Rafael Mendoza</button>
+                </div>
+              </div>
+              <div class="form-row">
+                <input type="number" id="personas" placeholder="Personas por Mesa" name="personas" min="1">
+                <input type="submit" value="RESERVAR MESA">
+              </div>
+            </form>
+          </div>
+          <div id="administraReservas">
 
-    <script src="app.js" type="module"></script>
-</body>
-</html>
+            <h2 id="administra">Administrar reservas</h2>
+            <ul id="reservas" class="lista-citas"></ul>
+          </div>
+      </section>
+
+      <script src="app.js" type="module"></script>
+  </body>
+
+  </html>

@@ -1,98 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.banner{
-    min-height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("images/fondo.jpeg") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: azure;
-    padding-bottom: 20px;
+.banner {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/fondo.jpeg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  padding-bottom: 20px;
 }
-.titulo{
-    margin: 1vh;
-    padding-bottom:30px;
-    margin-bottom:20px;
+.titulo {
+  margin: 1vh;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .card-contenedor {
-    display: grid;
-    grid-template-columns: 420px 450px;
+  display: grid;
+  grid-template-columns: 420px 450px;
 }
 
-.card-image{
-    background: url("images/tragos.jpg") center/cover no-repeat;
+.card-image {
+  background: url("images/tragos.jpg") center/cover no-repeat;
 }
 
 .card-contenido {
-    background: #fff;
-    height: 330px;
+  background: #fff;
+  height: 330px;
 }
 
 .card-contenido h3 {
-    text-align:center;
-    color: #000;
-    padding: 25px 0 10px 0;
-    font-size: 26px;
-    font-weight: 500 ;
+  text-align: center;
+  color: #000;
+  padding: 25px 0 10px 0;
+  font-size: 26px;
+  font-weight: 500;
 }
 
-.form-row{
-    display:flex;
-    width: 95%;
-    margin: 0 auto;
+.form-row {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
 }
 
-form select, form input {
-    display:block;
-    width:100%;
-    margin:15px 12px;
-    padding: 5px;
-    font-family:'Poppins', sans-serif;
-    outline:none;
-    border: none;
-    border-bottom: 1px solid #eee;
-    font-weight:300;
+form select,
+form input {
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
 }
 
-form input[type = text], 
-form input[type = number], 
-form input[type = date],
-form input[type = time],
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="time"],
 form input::placeholder,
-select{
-
-color: #a38e8e;
+select {
+  color: #a38e8e;
 }
 
-form input[type = submit]:hover{
-    opacity: 0.8;
+form input[type="submit"]:hover {
+  opacity: 0.8;
 }
 
-form input[type = submit] {
-    color: #fff;
-    background: rgb(209, 7, 175);
-    padding: 12px 0;
-    border-radius: 4px;
-    cursor:pointer;
+form input[type="submit"] {
+  color: #fff;
+  background: rgb(209, 7, 175);
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-#reservas{
-    display:grid;
-    /* grid-template-columns: 410px 410px; */
-    grid-template-columns: 293px 293px 293px;
-    grid-gap: 15px 15px;
+#reservas {
+  display: grid;
+  /* grid-template-columns: 410px 410px; */
+  grid-template-columns: 293px 293px 293px;
+  grid-gap: 15px 15px;
 }
 
 /** ---------------------- Estilos para HEADER ------------------------- **/
@@ -103,7 +104,7 @@ form input[type = submit] {
 }
 
 html {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 body {
   margin: 0;
@@ -279,32 +280,32 @@ input#check {
 
 /* -------------------------------------- HERO SECTION ------------------------------------------*/
 
-/* Hero Section HomePage */
-.wrap-header-hero{
-  background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(img/hero-front-page-bg.jpg);
+.wrap-header-hero {
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0.5)),
+    url(img/hero-front-page-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.hero-home-page{
+.hero-home-page {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.wrap-hero-home-page{
+.wrap-hero-home-page {
   color: #fff;
   text-align: center;
   width: 50%;
 }
 
-.wrap-hero-home-page p{
+.wrap-hero-home-page p {
   margin-bottom: 2rem;
 }
 
-@media (max-width:768px){
-  .wrap-hero-home-page{
+@media (max-width: 768px) {
+  .wrap-hero-home-page {
     width: 100%;
     padding: 1rem;
   }
@@ -312,142 +313,144 @@ input#check {
 
 /* -------------------------------  CARTA --------------------------------------- */
 
-@media (max-width:680px){
-    .column-2.carta{
-      grid-template-columns: repeat(1,1fr);
-    }
+@media (max-width: 680px) {
+  .column-2.carta {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .wrap{
-      max-width: 1500px;
-      margin: 0 auto;
-      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("images/fondocarta3.jpg") center/cover no-repeat;
-    }
-    
-    .column-2.carta{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      column-gap: 2rem;
-      row-gap: 2rem;
-    }
-    
-    .plato-carta{
-      display: flex;
-      align-items: center;
-      border: 2px solid #e5e5e5;
-      border-radius: 6px;
-      margin-right: 30px;
-      margin-left: 30px;
-    }
+}
 
-    .wrap-title-section{
-      padding: 20px;
-      color: #ffffff;
-      justify-content: center;
-    }
-    
-    .img-plato-carta{
-      display: flex;
-      flex-basis: 20%;
-    }
-    
-    .img-plato-carta img{
-      max-width: 150px;
-      max-height: 150px;
-    }
-    
-    .title-plato-carta{
-      border: 1px solid #e5e5e5;
-      border-bottom: none;
-      border-top: none;
-      flex-basis: 60%;
-      padding: 0 1rem;
-      color: #ffffff;
-    }
-  
-    .precio-plato-carta{
-      display: flex;
-      flex-basis: 25%;
-      justify-content: center;
-      font-weight: bold;
-      color: #ffffff;
-    }
+.wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/fondocarta3.jpg") center/cover no-repeat;
+}
 
-    /* Tarjetas de Blog */
-article.card{
+.column-2.carta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.plato-carta {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e5e5e5;
+  border-radius: 6px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.wrap-title-section {
+  padding: 20px;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.img-plato-carta {
+  display: flex;
+  flex-basis: 20%;
+}
+
+.img-plato-carta img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.title-plato-carta {
+  border: 1px solid #e5e5e5;
+  border-bottom: none;
+  border-top: none;
+  flex-basis: 60%;
+  padding: 0 1rem;
+  color: #ffffff;
+}
+
+.precio-plato-carta {
+  display: flex;
+  flex-basis: 25%;
+  justify-content: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Tarjetas de Blog */
+article.card {
   max-width: 350px;
   background-color: #f8f8f8;
   margin: 1rem;
   box-shadow: 0px 0px 12px #d7d7d7;
 }
-.header-card{
+.header-card {
   display: flex;
 }
-.header-card img{
+.header-card img {
   border-radius: 8px 8px 0 0;
   max-height: 200px;
   height: 200px;
   width: 100%;
 }
 
-.categoria-card{
+.categoria-card {
   margin-top: 1rem;
 }
 
-.categoria-card span{
+.categoria-card span {
   background: var(--main-c);
   border-radius: 4px;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   color: #fff;
 }
 
-.card footer{
+.card footer {
   display: flex;
   flex-flow: column;
   padding: 0 1rem;
 }
 
-.perfil-card{
+.perfil-card {
   display: flex;
   align-items: center;
 }
 
-.img-perfil-card{
+.img-perfil-card {
   display: flex;
 }
 
-.img-perfil-card img{
+.img-perfil-card img {
   width: 50px;
   border-radius: 50%;
   margin: 1rem 1rem 1rem 0;
 }
-.text-perfil-card{
+.text-perfil-card {
   display: flex;
   flex-flow: column;
 }
-.text-perfil-card span:nth-child(2){
-  color: #cfcfcf; 
+.text-perfil-card span:nth-child(2) {
+  color: #cfcfcf;
 }
-.card-wrap{
+.card-wrap {
   display: flex;
   flex-flow: wrap;
 }
 
-@media (max-width:768px){
-  .card-wrap{
+@media (max-width: 768px) {
+  .card-wrap {
     justify-content: center;
   }
 }
 
 /* Gerlía de Imágenes */
 
-.imagen-galeria, .imagen-galeria img{
+.imagen-galeria,
+.imagen-galeria img {
   max-width: 275px;
   border-radius: 4px;
 }
 
-@media (max-width:880px){
-  .galeria-platos{
+@media (max-width: 880px) {
+  .galeria-platos {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
