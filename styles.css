@@ -95,3 +95,361 @@ form input[type = submit] {
     grid-gap: 15px 15px;
 }
 
+/** ---------------------- Estilos para HEADER ------------------------- **/
+
+:root {
+  --main-c: #c5009e;
+  --black-c: #000;
+}
+
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+/* ------------------------------ ENLACES Y BOTONES -------------------------------------------- */
+
+.cta-main {
+  background-color: var(--main-c);
+  padding: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* -----------------------------  HEADER RESTO ---------------------------------- */
+header.main-header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #000;
+  z-index: 999;
+}
+.wrap-logo-header {
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+}
+.logo-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* ----------------------------------------- HEADER ------------------------------------------------------ */
+.nav-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav-wrap-header {
+  display: flex;
+  flex-basis: 50%;
+}
+
+ul.main-menu {
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+ul.main-menu #nav-main-contact {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--main-c);
+  color: #ffffff;
+}
+li.menu-item {
+  margin: 0.75rem;
+  display: flex;
+}
+li.menu-item a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+li.menu-item a:hover {
+  color: var(--main-c);
+}
+
+i.toggle-menu img {
+  width: 27px;
+  z-index: 99;
+}
+
+i.toggle-menu {
+  display: none;
+  background-color: #fff;
+  border: none;
+  z-index: 9999;
+}
+
+input#check {
+  display: none;
+}
+
+@media (min-width: 880px) {
+  .header-wrap {
+    padding: 0.5rem 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  a.logo-header {
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  header.main-header {
+    margin-bottom: 4rem;
+  }
+  .header-wrap {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    top: 0;
+    z-index: 9999;
+    height: 60px;
+  }
+  .wrap-logo-header {
+    position: fixed;
+    z-index: 999;
+    top: 3%;
+    left: 3%;
+  }
+  .logo-header,
+  li.menu-item a {
+    color: #222;
+  }
+
+  i.toggle-menu {
+    display: block;
+  }
+  ul.main-menu,
+  #nav-main-contact {
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  ul.main-menu {
+    position: fixed;
+    background-color: #fff;
+  }
+  label.checkbtn {
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  #check:checked ~ ul {
+    display: flex;
+    z-index: 9;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    font-size: 2rem;
+  }
+}
+
+/* -------------------------------------- HERO SECTION ------------------------------------------*/
+
+/* Hero Section HomePage */
+.wrap-header-hero{
+  background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(img/hero-front-page-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-home-page{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap-hero-home-page{
+  color: #fff;
+  text-align: center;
+  width: 50%;
+}
+
+.wrap-hero-home-page p{
+  margin-bottom: 2rem;
+}
+
+@media (max-width:768px){
+  .wrap-hero-home-page{
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* -------------------------------  CARTA --------------------------------------- */
+
+@media (max-width:680px){
+    .column-2.carta{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+  .wrap{
+      max-width: 1500px;
+      margin: 0 auto;
+      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("images/fondocarta3.jpg") center/cover no-repeat;
+    }
+    
+    .column-2.carta{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+      row-gap: 2rem;
+    }
+    
+    .plato-carta{
+      display: flex;
+      align-items: center;
+      border: 2px solid #e5e5e5;
+      border-radius: 6px;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    .wrap-title-section{
+      padding: 20px;
+      color: #ffffff;
+      justify-content: center;
+    }
+    
+    .img-plato-carta{
+      display: flex;
+      flex-basis: 20%;
+    }
+    
+    .img-plato-carta img{
+      max-width: 150px;
+      max-height: 150px;
+    }
+    
+    .title-plato-carta{
+      border: 1px solid #e5e5e5;
+      border-bottom: none;
+      border-top: none;
+      flex-basis: 60%;
+      padding: 0 1rem;
+      color: #ffffff;
+    }
+  
+    .precio-plato-carta{
+      display: flex;
+      flex-basis: 25%;
+      justify-content: center;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    /* Tarjetas de Blog */
+article.card{
+  max-width: 350px;
+  background-color: #f8f8f8;
+  margin: 1rem;
+  box-shadow: 0px 0px 12px #d7d7d7;
+}
+.header-card{
+  display: flex;
+}
+.header-card img{
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+}
+
+.categoria-card{
+  margin-top: 1rem;
+}
+
+.categoria-card span{
+  background: var(--main-c);
+  border-radius: 4px;
+  padding: .2rem .5rem;
+  color: #fff;
+}
+
+.card footer{
+  display: flex;
+  flex-flow: column;
+  padding: 0 1rem;
+}
+
+.perfil-card{
+  display: flex;
+  align-items: center;
+}
+
+.img-perfil-card{
+  display: flex;
+}
+
+.img-perfil-card img{
+  width: 50px;
+  border-radius: 50%;
+  margin: 1rem 1rem 1rem 0;
+}
+.text-perfil-card{
+  display: flex;
+  flex-flow: column;
+}
+.text-perfil-card span:nth-child(2){
+  color: #cfcfcf; 
+}
+.card-wrap{
+  display: flex;
+  flex-flow: wrap;
+}
+
+@media (max-width:768px){
+  .card-wrap{
+    justify-content: center;
+  }
+}
+
+/* Gerlía de Imágenes */
+
+.imagen-galeria, .imagen-galeria img{
+  max-width: 275px;
+  border-radius: 4px;
+}
+
+@media (max-width:880px){
+  .galeria-platos{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+}
