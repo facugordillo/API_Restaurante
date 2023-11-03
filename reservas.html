@@ -71,11 +71,9 @@
                 <input type="text" name="telefono" id="telefono" placeholder="Telefono">
               </div>
               <div class="form-row">
-                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                  <button type="button" class="btn btn-outline-primary">Córdoba (centro)</button>
-                  <button type="button" class="btn btn-outline-primary">Villa Allende</button>
-                  <button type="button" class="btn btn-outline-primary">San Rafael Mendoza</button>
-                </div>
+                <select class="form-select" aria-label="Default select example" id="sucursales">
+                  <option selected>Selecciona sucursal</option>
+                </select>
               </div>
               <div class="form-row">
                 <input type="number" id="personas" placeholder="Personas por Mesa" name="personas" min="1">
@@ -83,10 +81,15 @@
               </div>
             </form>
           </div>
+
           <div id="administraReservas">
 
             <h2 id="administra">Administrar reservas</h2>
-            <ul id="reservas" class="lista-citas"></ul>
+
+            <ul id="reservas" class="lista-citas">
+
+            </ul>
+            
           </div>
       </section>
 
