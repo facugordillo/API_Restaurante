@@ -128,6 +128,7 @@ a:visited {
 }
 
 /* -----------------------------  HEADER RESTO ---------------------------------- */
+
 header.main-header {
   position: relative;
   top: 0;
@@ -153,6 +154,7 @@ header.main-header {
 }
 
 /* ----------------------------------------- HEADER ------------------------------------------------------ */
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -209,7 +211,9 @@ input#check {
   display: none;
 }
 
-@media (min-width: 880px) {
+ /* -------------------------------- RESPONSIVE ----------------------------------- */
+
+ @media (min-width: 880px) {
   .header-wrap {
     padding: 0.5rem 5rem;
   }
@@ -234,6 +238,9 @@ input#check {
     z-index: 9999;
     height: 60px;
   }
+
+  /*-------------------------------------------------------------------*/
+
   .wrap-logo-header {
     position: fixed;
     z-index: 999;
@@ -304,6 +311,8 @@ input#check {
   margin-bottom: 2rem;
 }
 
+/* -------------------------------- RESPONSIVE ----------------------------------- */
+
 @media (max-width: 768px) {
   .wrap-hero-home-page {
     width: 100%;
@@ -311,148 +320,3 @@ input#check {
   }
 }
 
-/* -------------------------------  CARTA --------------------------------------- */
-
-@media (max-width: 680px) {
-  .column-2.carta {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.wrap {
-  max-width: 1500px;
-  margin: 0 auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/fondocarta3.jpg") center/cover no-repeat;
-}
-
-.column-2.carta {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
-}
-
-.plato-carta {
-  display: flex;
-  align-items: center;
-  border: 2px solid #e5e5e5;
-  border-radius: 6px;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.wrap-title-section {
-  padding: 20px;
-  color: #ffffff;
-  justify-content: center;
-}
-
-.img-plato-carta {
-  display: flex;
-  flex-basis: 20%;
-}
-
-.img-plato-carta img {
-  max-width: 150px;
-  max-height: 150px;
-}
-
-.title-plato-carta {
-  border: 1px solid #e5e5e5;
-  border-bottom: none;
-  border-top: none;
-  flex-basis: 60%;
-  padding: 0 1rem;
-  color: #ffffff;
-}
-
-.precio-plato-carta {
-  display: flex;
-  flex-basis: 25%;
-  justify-content: center;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-/* Tarjetas de Blog */
-article.card {
-  max-width: 350px;
-  background-color: #f8f8f8;
-  margin: 1rem;
-  box-shadow: 0px 0px 12px #d7d7d7;
-}
-.header-card {
-  display: flex;
-}
-.header-card img {
-  border-radius: 8px 8px 0 0;
-  max-height: 200px;
-  height: 200px;
-  width: 100%;
-}
-
-.categoria-card {
-  margin-top: 1rem;
-}
-
-.categoria-card span {
-  background: var(--main-c);
-  border-radius: 4px;
-  padding: 0.2rem 0.5rem;
-  color: #fff;
-}
-
-.card footer {
-  display: flex;
-  flex-flow: column;
-  padding: 0 1rem;
-}
-
-.perfil-card {
-  display: flex;
-  align-items: center;
-}
-
-.img-perfil-card {
-  display: flex;
-}
-
-.img-perfil-card img {
-  width: 50px;
-  border-radius: 50%;
-  margin: 1rem 1rem 1rem 0;
-}
-.text-perfil-card {
-  display: flex;
-  flex-flow: column;
-}
-.text-perfil-card span:nth-child(2) {
-  color: #cfcfcf;
-}
-.card-wrap {
-  display: flex;
-  flex-flow: wrap;
-}
-
-@media (max-width: 768px) {
-  .card-wrap {
-    justify-content: center;
-  }
-}
-
-/* Gerlía de Imágenes */
-
-.imagen-galeria,
-.imagen-galeria img {
-  max-width: 275px;
-  border-radius: 4px;
-}
-
-@media (max-width: 880px) {
-  .galeria-platos {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-  }
-}
