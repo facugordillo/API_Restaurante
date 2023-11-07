@@ -18,8 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("http://localhost:54468/api/Reserva")
       .then((response) => response.json())
       .then((dataReservas) => {
+
         console.log(dataReservas);
-        
+
+        const tbody = document.querySelector("tbody");
+
+        dataReservas.forEach((o) => {
+          let _tr = `<tr>
+                    <td>${o.fecha}<td>
+                    <td>${o.hora}<td>
+                    <td>${o.Nombre}<td>
+                    <td>${o.telefono}<td>
+                    </tr>`
+
+        tbody.innerHTML += _tr;
+                    
+        });
+
         });
       }
     
