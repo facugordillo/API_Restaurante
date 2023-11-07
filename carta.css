@@ -108,6 +108,84 @@ input#check {
     display: none;
 }
 
+/* -------------------------------------- HERO SECTION ------------------------------------------*/
+
+.wrap-header-hero {
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0.5)),
+        url(img/hero-front-page-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-home-page {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-hero-home-page {
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}
+
+.wrap-hero-home-page p {
+    margin-bottom: 2rem;
+}
+
+/* -------------------------------------- CARTA  ------------------------------------------*/
+
+.wrap {
+    max-width: 1700px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/fondocarta3.jpg") center/cover no-repeat;
+}
+
+.column-2.carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.plato-carta {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e5e5e5;
+    border-radius: 6px;
+    margin: 0 30px;
+}
+
+.wrap-title-section {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.img-plato-carta img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.title-plato-carta {
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+    color: #ffffff;
+}
+
+.precio-plato-carta {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
 /* -------------------------------- RESPONSIVE ----------------------------------- */
 
 @media (min-width: 880px) {
@@ -178,95 +256,13 @@ input#check {
         top: 0;
         font-size: 2rem;
     }
-}
 
-/* -------------------------------------- HERO SECTION ------------------------------------------*/
-
-.wrap-header-hero {
-    background: linear-gradient(to bottom, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0.5)),
-        url(img/hero-front-page-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hero-home-page {
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.wrap-hero-home-page {
-    color: #fff;
-    text-align: center;
-    width: 50%;
-}
-
-.wrap-hero-home-page p {
-    margin-bottom: 2rem;
-}
-
-/* -------------------------------- RESPONSIVE ----------------------------------- */
-
-@media (max-width: 768px) {
     .wrap-hero-home-page {
         width: 100%;
         padding: 1rem;
     }
-}
 
-@media (max-width: 680px) {
     .column-2.carta {
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-.wrap {
-    max-width: 1500px;
-    margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/fondocarta3.jpg") center/cover no-repeat;
-}
-
-.column-2.carta {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-}
-
-.plato-carta {
-    display: flex;
-    align-items: center;
-    border: 2px solid #e5e5e5;
-    border-radius: 6px;
-    margin: 0 30px;
-}
-
-.wrap-title-section {
-    padding: 20px;
-    color: #ffffff;
-}
-
-.img-plato-carta img {
-    max-width: 150px;
-    max-height: 150px;
-}
-
-.title-plato-carta {
-    border: 1px solid #e5e5e5;
-    border-bottom: none;
-    border-top: none;
-    flex-basis: 60%;
-    padding: 0 1rem;
-    color: #ffffff;
-}
-
-.precio-plato-carta {
-    display: flex;
-    flex-basis: 25%;
-    justify-content: center;
-    font-weight: bold;
-    color: #ffffff;
 }

@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Estilos para la sección del banner */
 .banner {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -19,36 +20,33 @@ body {
   justify-content: center;
   align-items: center;
   color: azure;
-  padding-bottom: 20px;
+  padding-bottom: 150px;
 }
+
 .titulo {
   margin: 1vh;
   padding-bottom: 30px;
   margin-bottom: 20px;
 }
 
+/* Estilos para el contenedor de tarjetas */
 .card-contenedor {
   display: grid;
   grid-template-columns: 420px 450px;
 }
 
+/* Estilos para la imagen de la tarjeta */
 .card-image {
   background: url("images/tragos.jpg") center/cover no-repeat;
 }
 
+/* Estilos para el contenido de la tarjeta */
 .card-contenido {
   background: #fff;
-  height: 330px;
+  height: 350px;
 }
 
-.card-contenido h3 {
-  text-align: center;
-  color: #000;
-  padding: 25px 0 10px 0;
-  font-size: 26px;
-  font-weight: 500;
-}
-
+/* Estilos para el formulario */
 .form-row {
   display: flex;
   width: 95%;
@@ -89,36 +87,31 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
-#reservas {
-  display: grid;
-  /* grid-template-columns: 410px 410px; */
-  grid-template-columns: 293px 293px 293px;
-  grid-gap: 15px 15px;
-}
-
-/** ---------------------- Estilos para HEADER ------------------------- **/
-
+/* Variables de colores */
 :root {
   --main-c: #c5009e;
   --black-c: #000;
 }
 
+/* Estilos generales */
 html {
   font-family: "Josefin Sans", sans-serif;
 }
+
 body {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 a:visited {
   color: inherit;
 }
 
-/* ------------------------------ ENLACES Y BOTONES -------------------------------------------- */
-
+/* Estilos para el llamado a la acción principal */
 .cta-main {
   background-color: var(--main-c);
   padding: 1rem;
@@ -127,39 +120,39 @@ a:visited {
   border-radius: 2px;
 }
 
-/* -----------------------------  HEADER RESTO ---------------------------------- */
-
+/* Estilos para el encabezado principal */
 header.main-header {
   position: relative;
   top: 0;
   width: 100%;
-  z-index: 9999;
 }
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   background-color: #000;
-  z-index: 999;
 }
+
 .wrap-logo-header {
   display: flex;
   align-items: center;
   flex-basis: 15%;
 }
+
 .logo-header {
   font-weight: bold;
   font-size: 1.2rem;
   color: #fff;
 }
 
-/* ----------------------------------------- HEADER ------------------------------------------------------ */
-
+/* Estilos para la navegación del encabezado */
 .nav-header {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .nav-wrap-header {
   display: flex;
   flex-basis: 50%;
@@ -168,7 +161,6 @@ header.main-header {
 ul.main-menu {
   display: flex;
   width: 100%;
-  z-index: 99;
   margin: 0;
   padding: 0;
   justify-content: space-between;
@@ -183,37 +175,38 @@ ul.main-menu #nav-main-contact {
   background-color: var(--main-c);
   color: #ffffff;
 }
+
 li.menu-item {
   margin: 0.75rem;
   display: flex;
 }
+
 li.menu-item a {
   padding: 0.5rem 1rem;
   color: #fff;
 }
+
 li.menu-item a:hover {
   color: var(--main-c);
 }
 
 i.toggle-menu img {
   width: 27px;
-  z-index: 99;
 }
 
 i.toggle-menu {
   display: none;
   background-color: #fff;
   border: none;
-  z-index: 9999;
 }
 
 input#check {
   display: none;
 }
 
- /* -------------------------------- RESPONSIVE ----------------------------------- */
+/* Estilos responsivos */
 
- @media (min-width: 880px) {
+@media (min-width: 880px) {
   .header-wrap {
     padding: 0.5rem 5rem;
   }
@@ -235,88 +228,6 @@ input#check {
     background-color: #fff;
     padding: 0;
     top: 0;
-    z-index: 9999;
     height: 60px;
   }
-
-  /*-------------------------------------------------------------------*/
-
-  .wrap-logo-header {
-    position: fixed;
-    z-index: 999;
-    top: 3%;
-    left: 3%;
-  }
-  .logo-header,
-  li.menu-item a {
-    color: #222;
-  }
-
-  i.toggle-menu {
-    display: block;
-  }
-  ul.main-menu,
-  #nav-main-contact {
-    display: none;
-    left: 0;
-    margin: 0;
-    padding: 0;
-  }
-  ul.main-menu {
-    position: fixed;
-    background-color: #fff;
-  }
-  label.checkbtn {
-    position: fixed;
-    right: 3%;
-    top: 3%;
-    z-index: 9999;
-    cursor: pointer;
-  }
-  #check:checked ~ ul {
-    display: flex;
-    z-index: 9;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    top: 0;
-    font-size: 2rem;
-  }
 }
-
-/* -------------------------------------- HERO SECTION ------------------------------------------*/
-
-.wrap-header-hero {
-  background: linear-gradient(to bottom, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0.5)),
-    url(img/hero-front-page-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.hero-home-page {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrap-hero-home-page {
-  color: #fff;
-  text-align: center;
-  width: 50%;
-}
-
-.wrap-hero-home-page p {
-  margin-bottom: 2rem;
-}
-
-/* -------------------------------- RESPONSIVE ----------------------------------- */
-
-@media (max-width: 768px) {
-  .wrap-hero-home-page {
-    width: 100%;
-    padding: 1rem;
-  }
-}
-
