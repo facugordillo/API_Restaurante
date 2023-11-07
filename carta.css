@@ -1,147 +1,8 @@
-/** ---------------------- Estilos para HEADER ------------------------- **/
-:root {
-    --main-c: #c5009e;
-    --black-c: #000;
-}
-
-html {
-    font-family: "Josefin Sans", sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* -----------------------------  HEADER RESTO ---------------------------------- */
-
-header.main-header {
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #000;
-    z-index: 999;
-}
-
-.wrap-logo-header {
-    display: flex;
-    align-items: center;
-    flex-basis: 15%;
-}
-
-.logo-header {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #fff;
-}
-
-/* ----------------------------------------- HEADER ------------------------------------------------------ */
-
-.nav-header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-wrap-header {
-    display: flex;
-    flex-basis: 50%;
-}
-
-ul.main-menu {
-    display: flex;
-    width: 100%;
-    z-index: 99;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.1rem;
-}
-
-ul.main-menu #nav-main-contact {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: var(--main-c);
-    color: #ffffff;
-}
-
-li.menu-item {
-    margin: 0.75rem;
-    display: flex;
-}
-
-li.menu-item a {
-    padding: 0.5rem 1rem;
-    color: #fff;
-}
-
-li.menu-item a:hover {
-    color: var(--main-c);
-}
-
-i.toggle-menu img {
-    width: 27px;
-    z-index: 9999;
-}
-
-i.toggle-menu {
-    display: none;
-    background-color: #fff;
-    border: none;
-    z-index: 9999;
-}
-
-input#check {
-    display: none;
-}
-
-/* -------------------------------------- HERO SECTION ------------------------------------------*/
-
-.wrap-header-hero {
-    background: linear-gradient(to bottom, rgb(0 0 0 / 0.75), rgb(0 0 0 / 0.5)),
-        url(img/hero-front-page-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hero-home-page {
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.wrap-hero-home-page {
-    color: #fff;
-    text-align: center;
-    width: 50%;
-}
-
-.wrap-hero-home-page p {
-    margin-bottom: 2rem;
-}
-
 /* -------------------------------------- CARTA  ------------------------------------------*/
 
 .wrap {
     max-width: 1700px;
     margin: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/fondocarta3.jpg") center/cover no-repeat;
 }
 
 .column-2.carta {
@@ -154,14 +15,14 @@ input#check {
 .plato-carta {
     display: flex;
     align-items: center;
-    border: 2px solid #e5e5e5;
+    border: 2px solid #000000;
     border-radius: 6px;
     margin: 0 30px;
 }
 
 .wrap-title-section {
     padding: 20px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .img-plato-carta img {
@@ -170,12 +31,12 @@ input#check {
 }
 
 .title-plato-carta {
-    border: 1px solid #e5e5e5;
+    border: 1px solid #000000;
     border-bottom: none;
     border-top: none;
     flex-basis: 60%;
     padding: 0 1rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 .precio-plato-carta {
@@ -183,7 +44,7 @@ input#check {
     flex-basis: 25%;
     justify-content: center;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* -------------------------------- RESPONSIVE ----------------------------------- */
@@ -204,6 +65,7 @@ input#check {
     header.main-header {
         margin-bottom: 4rem;
     }
+
     .header-wrap {
         position: fixed;
         width: 100%;
@@ -220,6 +82,7 @@ input#check {
         top: 3%;
         left: 3%;
     }
+
     .logo-header,
     li.menu-item a {
         color: #222;
@@ -228,6 +91,7 @@ input#check {
     i.toggle-menu {
         display: block;
     }
+
     ul.main-menu,
     #nav-main-contact {
         display: none;
@@ -235,10 +99,12 @@ input#check {
         margin: 0;
         padding: 0;
     }
+
     ul.main-menu {
         position: fixed;
         background-color: #fff;
     }
+
     label.checkbtn {
         position: fixed;
         right: 3%;
@@ -246,7 +112,8 @@ input#check {
         z-index: 9999;
         cursor: pointer;
     }
-    #check:checked ~ ul {
+
+    #check:checked~ul {
         display: flex;
         z-index: 9;
         flex-flow: column;
