@@ -63,21 +63,21 @@
             <h3>Reserva</h3>
             <form id="reservar-mesa">
               <div class="form-row">
-                <input type="date" id="fecha" name="fecha">
-                <input type="time" id="hora" name="hora" min="10:00" max="24:00" required>
+                <input type="date" id="fechaInput" name="fecha">
+                <input type="time" id="horaInput" name="hora" min="10:00" max="24:00" required>
               </div>
               <div class="form-row">
-                <input type="text" id="nombre" placeholder="Nombre Completo" name="nombre">
-                <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+                <input type="text" id="nombreInput" placeholder="Nombre Completo" name="nombre">
+                <input type="text" name="telefono" id="telefonoInput" placeholder="Telefono">
               </div>
               <div class="form-row">
-                <select class="form-select" aria-label="Default select example" id="sucursales">
+                <select class="form-select" aria-label="Default select example" id="sucursalesInput">
                   <option selected>Selecciona sucursal</option>
                 </select>
               </div>
               <div class="form-row">
-                <input type="number" id="personas" placeholder="Personas por Mesa" name="personas" min="1">
-                <input type="submit" value="RESERVAR MESA">
+                <input type="number" id="personasInput" placeholder="Personas por Mesa" name="personas" min="1">
+                <input type="submit" value="RESERVAR MESA" id="reservarBtn">
               </div>
             </form>
           </div>
@@ -93,7 +93,7 @@
           </div>
       </section>
 
-      <script src="app.js" type="module"></script>
+      <script src="js/app.js" type="module"></script>
   </body>
 
   </html>
